@@ -1,7 +1,8 @@
 <?php
-
-    $id = 1; //$_GET['id'];
-
+    $id = 0;
+    if(!empty($_GET['id'])){
+      $id = $_GET['id'];
+    }
     $servername = "localhost";
     $username = "root";
     $password = "";
