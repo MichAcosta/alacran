@@ -238,16 +238,34 @@ $(document).ready(function(){
         <div id="contact" class="row">
             <div class="col-lg-12">
                 <h1 class="title">Contacto</h1>
-                <form class="form">
-                    <span>Nombre</span>
-                    <input id="area" type="text" name="name"></br>
+<?php
+  if (isset($_REQUEST['email']))  {
+
+  $admin_email = "michelletacostac@gmail.com";
+  $email = $_REQUEST['email'];
+  $subject = $_REQUEST['subject'];
+  $comment = $_REQUEST['comment'];
+
+  mail($admin_email, "$subject", $comment, "From:" . $email);
+ 
+  echo "Nos ponemos en contacto pronto";
+  }
+  else  {
+?>
+                <form class="form" method="post">
                     <span>Email</span>
                     <input id="area" type="email" name="email"></br>
+                    <span>Asunto</span>
+                    <input id="area" type="text" name="subject"></br>
                     <textarea id="area" rows="4" cols="50">
                         Escribenos un comentario.
                     </textarea>
                     <input type="submit" id="submit" class="button" value="ENVIAR">
                 </form>
+
+    <?php
+  }
+?>
 
 
              <div id="map"></div>
