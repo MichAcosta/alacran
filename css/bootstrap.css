@@ -214,7 +214,7 @@ th {
   }
   pre,
   blockquote {
-    border: 1px solid #999;
+    border: 1px solid #000;
 
     page-break-inside: avoid;
   }
@@ -4185,8 +4185,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   overflow-x: visible;
   -webkit-overflow-scrolling: touch;
   border-top: 1px solid transparent;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+  -webkit-box-shadow: inset 0 1px 0 pink;
+          box-shadow: inset 0 1px 0 pink;
 }
 .navbar-collapse.in {
   overflow-y: auto;
@@ -6753,5 +6753,6 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+
 }
 /*# sourceMappingURL=bootstrap.css.map */

@@ -1,13 +1,23 @@
 	body{
-		font-family: 'Oswald', sans-serif;
-		background-color: #F4FA58;
+		font-family: 'Lato', sans-serif !important;
+		background-color: #f2f2f2 !important; 
 		margin: 0;
 		padding: 0;
 	}
-
-	#menu{
-		background-color: #222222;
-		height: 3rem;
+	.nav{
+	    border:1px solid #ccc;
+	    border-width:1px 0;
+	    list-style:none;
+	    margin:0;
+	    padding:0;
+	    text-align:center;
+	}
+	.nav li{
+	    display:inline;
+	}
+	.nav a{
+	    display:inline-block;
+	    padding:10px;
 	}
 	img{
 		width: 100%;
@@ -21,17 +31,81 @@
 		height: auto;
 	}
 
-	a{
-		color: white;
-		text-decoration: none;
-		font-size: 1em;
-		margin: 14px;
-		float: right;
+	#contact{
+		background: #F8A434;
+		font-family: 'Lato', sans-serif;
+		color: #FDFCFB;
+
 	}
 
-	.form{
-		background-color: red;
+	#area{
 		width: 50%;
+		background: #FDFCFB;
+		font-family: inherit;
+		color: #737373;
+		letter-spacing: 1px;
+		text-indent: 5%;
+		border-radius: 5px 0 0 5px;
+	}
+
+	.title{
+		font-size: 35px;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+		text-align: center;
+	}
+	input{
+		display: flex;
+	}
+	.button{
+		height: 44px;
+		border: none;
+	}
+
+	#submit {
+		width: 50%;
+		height: 46px;
+		background: #E86C8D;
+		font-family: inherit;
+		font-weight: bold;
+		color: inherit;
+		letter-spacing: 1px;
+		border-radius: 0 5px 5px 0;
+		cursor: pointer;
+		text-align: center !important;
+		margin-top:2rem;
+		transition: background .3s ease-in-out;
+	}
+
+
+	#submit:hover {
+		background: #d45d7d;
+		}
+		
+
+	input:focus {
+		outline: none;
+		outline: 2px solid #E86C8D;
+		box-shadow: 0 0 2px #E86C8D;
+		}
+			
+
+	.form{
+		width: 80%;
+		margin: 5% auto;
+	}
+
+	#map {
+		width: 500px;
+		height: 400px;
+	}
+
+	
+
+
+	#tequila{
+		background-color: white;
+		height: 52rem;
 	}
 
 	.logo{
@@ -46,7 +120,4 @@
 		padding: 1rem;
 		height: 2rem;
 		background-color: #0a0f0f;
-	}
-	.home{
-		background-color: #F0DB00;
 	}

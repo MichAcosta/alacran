@@ -14,8 +14,6 @@ $(document).ready(function(){
 });
 
 
-
-
 // identificacion edad
     function calcularEdad(fecha)
 {
@@ -25,6 +23,7 @@ $(document).ready(function(){
         var dia = values[2];
         var mes = values[1];
         var ano = values[0];
+
 
         // cogemos los valores actuales
         var fecha_hoy = new Date();
@@ -65,5 +64,6 @@ $(document).ready(function(){
             ultimoDiaMes=new Date(ahora_ano, ahora_mes, 0);
             dias=ultimoDiaMes.getDate()-(dia-ahora_dia);
         }
+        console.log(edad)
         return edad;
 }
