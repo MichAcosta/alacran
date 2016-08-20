@@ -179,8 +179,8 @@ $(document).ready(function(){
                 <span>Listado de productos</span>
 
             <div class="nav">
-                <a href="pages/page_1.php">El Tradicional</a>
-                <a href="pages/page_2.php">Reposado</a>
+                <a href="#one">El Tradicional</a>
+                <a href="#two">Reposado</a>
                 <a href="pages/page_3.php">Cristal</a>
                 <a href="pages/page_4.php">Añejo</a>
                 <a href="pages/page_5.php">Rosado</a>
@@ -192,16 +192,12 @@ $(document).ready(function(){
                 <span class="subtitle">Origen</span>
                 <img class="products" src="images/alacran1.png">
 
-                <?php while($row = $result->fetch_assoc()): ?>
-                    <div>
-                        <p class="product_name"><?php echo utf8_encode($row['nombre']);?></p>
-                        <p class="description"><?php echo utf8_encode($row['descripcion']);?></p>
-                        <p class="price">$<?php echo $row['precios'];?></p>
+                    <div class="info">
+                        <p class="product_name">Ata Blanco</p>
+                        <p class="origin">LOS ALTOS, JALISCO, MEXICO</p>
+                        <p class="price">$280</p>
+                        <p>Posee aromas a maguey cocido, tierra mojada y notas herbales. Te recordará la fresca atmósfera de un campo llovido. En boca, estas notas se suman a sabores tales, como caramelo, flores y minerales.</p>
                     </div>
-                    <div>
-                        <img class "products" src="images/<?php echo $row['imagen']; ?>">
-                    </div>
-                <?php endwhile; ?>
 
             </div>
 
@@ -218,13 +214,14 @@ $(document).ready(function(){
 
                 
 
-                <div class="">
-                    <p class="product_name"><?php echo $registro['nombre'];?></p>
-                    <p class="description"><?php echo $registro['descripcion'];?></p>
-                    <p class="price"> $ <?php echo $registro['precios'];?></p>
-                </div>
                 <div>
-                    <img class "products" src="images/<?php echo $row['imagen']; ?>">
+                    <p class="product_name">Ata Reposado</p>
+                    <p class="origin">LOS ALTOS, JALISCO, MEXICO</p>
+                    <p class="price">$360</p>
+                    <p>DESTILADO LIMPIO, NEUTRO, SIN FUERTE AROMA ALCOHOLICO,
+                        | LIGERA ESCENCIA DE AGAVE. TRANSPARENTE, CRISTALINO SIN SABOR PERFUMADO 0 0 EL AUTÉNTICO TEQUILA BLANCO EN LA BOTELLA NEGRA
+                        | AGAVE MADURADO POR 7 AÑOS, 100% TEQUILA AZUL TEQUILANA WEBER
+                        | FÓRMULA HERBAL ÚNICA FAMILIAR SUAVE, CON LIGERAS NOTAS FRUTALES</p>
                 </div>
 
             </div>
@@ -235,9 +232,10 @@ $(document).ready(function(){
                 <img class="products" src="images/alacran3.png">
 
                 <div class="">
-                    <p class="product_name"><?php echo $registro['nombre'];?></p>
-                    <p class="description"><?php echo $registro['descripcion'];?></p>
-                    <p class="price"> $ <?php echo $registro['precios'];?></p>
+                    <p class="product_name">Cristal</p>
+                    <p class="description">Los altos Jalisco</p>
+                    <p class="price"> $300</p>
+                    <p>Fascinante de aromas intensos de chocolate con caramelo, café con leche, vainilla y especia marrón. Regio Las notas del café y de la vainilla agregan complejidad, con una suavidad, atractiva textura y sabores ricos, voluptuosos que combinan en una conclusión cautivadora de la sensación de gusto con un complejo, final persistente.</p>
                 </div>
 
             </div>
@@ -304,6 +302,7 @@ $(document).ready(function(){
 ?>
 
             <div id= "mapa">
+                <h1 class="title">Ubicanos</h1>
                 <div id="map"></div>
              </div>
 

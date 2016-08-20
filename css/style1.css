@@ -1,11 +1,10 @@
 	body{
 		font-family: 'Lato', sans-serif !important;
-		background-color: #f2f2f2 !important; 
+		background-color: #fff !important; 
 		margin: 0;
 		padding: 0;
 	}
 	.nav{
-	    border:1px solid #ccc;
 	    border-width:1px 0;
 	    list-style:none;
 	    margin:0;
@@ -18,6 +17,16 @@
 	.nav a{
 	    display:inline-block;
 	    padding:10px;
+	}
+
+/*	#two{
+		background-color: red;
+		height: 5rem;
+	}
+*/
+	a.headr{
+		font-size: 23px;
+		text-align: center;
 	}
 	img{
 		width: 100%;
@@ -32,7 +41,7 @@
 	}
 
 	#contact{
-		background: #F8A434;
+		background: #ffcc00;
 		font-family: 'Lato', sans-serif;
 		color: #FDFCFB;
 
@@ -65,7 +74,7 @@
 	#submit {
 		width: 50%;
 		height: 46px;
-		background: #E86C8D;
+		background: #000;
 		font-family: inherit;
 		font-weight: bold;
 		color: inherit;
@@ -79,28 +88,43 @@
 
 
 	#submit:hover {
-		background: #d45d7d;
+		background: #000;
 		}
 		
 
 	input:focus {
 		outline: none;
-		outline: 2px solid #E86C8D;
-		box-shadow: 0 0 2px #E86C8D;
+		outline: 2px solid #000;
+		box-shadow: 0 0 2px #000;
 		}
 			
 
 	.form{
 		width: 80%;
 		margin: 5% auto;
+		margin-left: 34rem;
+		display: block;
 	}
 
 	#map {
-		width: 500px;
+		width: 900px;
 		height: 400px;
+		margin: 0 auto;
 	}
 
-	
+	#one, #three, #five{
+		background-color: #b3b3b3;
+	}
+	.info{
+		width: 50%
+	}
+
+
+	#mapa{
+		width: 100%;
+		display: block;
+		background-color: #000;
+	}
 
 
 	#tequila{
